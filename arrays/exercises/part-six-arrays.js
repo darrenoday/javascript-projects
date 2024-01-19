@@ -34,5 +34,5 @@ let array3D = [];
 array3D.push(item1,item2,item3);
 console.log (array3D);
 console.log(array3D[0]);
-console.log(array3D[0][0]);
-console.log(array3D[0][0][0]);
+console.log(array3D[1][1]);
+console.log(array3D[2][2][2]);
