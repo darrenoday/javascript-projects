@@ -12,7 +12,7 @@ let altitudeReached = 0;
 
   startingFuelLevel = input.question('Enter starting fuel level.(5001 - 29999) ')
 
-  while (startingFuelLevel <= 5000 || startingFuelLevel >= 30000){
+  while (startingFuelLevel <= 5000 || startingFuelLevel >= 30000 || isNaN(startingFuelLevel)) {
     console.log("ERROR. Please enter a number greater than 5000 and less than 30000. ")
     startingFuelLevel = input.question('Enter starting fuel level. ')
   }
