@@ -1,7 +1,19 @@
 //We want to COMPLETELY reverse an array by flipping the order of the entries AND flipping the order of characters in each element.
 
 // Part One: Reverse Characters
-
+function reverseCharacters(stringToReverse){
+if (typeof(stringToReverse == "Number")){
+   
+      thing = String(stringToReverse);
+ reversedString = thing.split('').reverse().join('');
+        Number(reversedString);
+    return reversedString
+}  if (typeof(stringToReverse == "String")) {
+    reversedString = stringToReverse.split('').reverse().join('');
+    return reversedString
+}
+}
+//console.log(reverseCharacters("1234"));
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
 // 2. Within the function, split the string into an array, then reverse the array.
 // 3. Use join to create the reversed string and return that string from the function.
@@ -18,6 +30,17 @@
 // 5. Be sure to print the result returned by the function to verify that your code works for both strings and numbers. Do this before moving on to the next exercise.
 
 // Part Three: Complete Reversal
+function reverseArray(arrayToReverse){
+let reversedArray = []
+for (i=0; i < arrayToReverse.length; i++){
+newArray = reverseCharacters(arrayToReverse[i])
+    reversedArray.push(newArray)
+    }
+    reversedArray.reverse();
+return reversedArray
+
+}
+
 
 // 1. Define and initialize an empty array.
 // 2. Loop through the old array.
@@ -29,7 +52,9 @@
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
-
+console.log (reverseArray(arrayTest1));
+console.log (reverseArray(arrayTest2));
+console.log (reverseArray(arrayTest3));
 // Bonus Missions
 
 // 1. Have a clear, descriptive name like funPhrase.
