@@ -1,4 +1,14 @@
 //Create an anonymous function and set it equal to a variable.
+let arrTripler = function(n){
+    if (typeof(n) == "string"){
+        return "ARRR!"
+    } else if (typeof(n) == "number"){
+        return  (n*3);
+    }
+
+
+
+}
 
 /* Your function should:
 a) If passed a number, return the tripled value.
@@ -13,3 +23,8 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+
+let arr2 = arr.map(arrTripler);
+
+console.log(arr);
+console.log(arr2);
